@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require("express");
 const db = require("./api/conf/db_conn");
 const PORT = process.env.PORT || 3000;
