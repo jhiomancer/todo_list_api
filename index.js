@@ -1,12 +1,9 @@
 require('dotenv').config()
 const express = require("express");
 const db = require("./api/conf/db_conn");
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 const apiRouter = require("./api/index.route");
-
-//Initialization
 const app = express();
-//Setting database connection object on app
 
 app.set("db",db);
 
