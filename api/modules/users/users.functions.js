@@ -67,7 +67,6 @@ const loginUser = async (req,res) => {
         const db = req.app.get("db");
         const {username,password} = req.body;
         const checkUser = await getUserPasswordByUsernameQuery(db,username);
-        console.log(checkUser)
         if(checkUser.length == 0){
             return res.status(500).json({
                 success:false,
