@@ -39,8 +39,8 @@ All endpoints should return JSON responses.
 **API endpoints for User Module:**
     
 * **/api/user/register:** To register a new user (method: POST)
-* **/api/user :** To fetch all users (method : GET)
-* **/api/user/login :** To logging a user (method : POST)
+* **/api/user :** To get all users (method : GET)
+* **/api/user/login :** To login a user (method : POST)
 
 **Todos Module:** This module contains all API endpoints for Creating, Listing, Updating, Removing todo
 
