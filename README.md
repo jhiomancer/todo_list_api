@@ -19,7 +19,7 @@ Create an API for managing a TODO list with the following specification:
     - The user should be able to reorder the tasks in the TODO list (not completed)
     - A task in the TODO list should be able to handle being moved more than 50 times (not completed)
     - A task in the TODO list should be able to handle being moved to more than one task away from its current position (not completed)
-* Return proper errors with corresponding HTTP codes
+* Return proper errors with corresponding HTTP codes (not completed, need to add Detailed Error messages)
 * Note: You can think of this as an API endpoint that will be used to handle the drag and drop feature of a TODO list application.
 
 All endpoints should return JSON responses.
