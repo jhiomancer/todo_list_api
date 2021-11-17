@@ -1,10 +1,9 @@
 const {createTodoQuery, getTodoQuery, getTodoByIdQuery, updateTodoQuery, removeTodoQuery,removeTodoByIdQuery } = require("./todo.sql.queries");
+
 const createTodo = async (req,res)=>{
     try {
-        console.log("im here");
         const db = req.app.get("db");
         const user = req.app.get("user");
-        console.log(user);
         const p = {user_id: user.userId,...req.body};
         const response = await createTodoQuery(db,p);
 
